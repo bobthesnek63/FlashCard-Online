@@ -1,0 +1,108 @@
+<<<<<<< HEAD
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Card</title>
+
+    <style>
+        #header {
+            margin-top: 2%;
+            text-align: center;
+        }
+
+        #form{
+            text-align: center;
+        }
+
+        #box{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 700px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        #image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3%;
+            margin-top: 2%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="header"><%= name %></h1>
+
+    <div id="box">
+        <h3 id='header'><%= info %></h3>
+    </div>
+    
+
+    <img id="image" src="<%= url %>">
+    
+
+    <form action="/back" method="POST" id="form">
+        <input type="submit" name="backBtn" value="Back">
+    </form>
+</body>
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Card</title>
+
+    <style>
+        #header {
+            margin-top: 2%;
+            text-align: center;
+        }
+
+        #form{
+            text-align: center;
+        }
+
+        #box{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 700px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        #image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3%;
+            margin-top: 2%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="header"><%= name %></h1>
+
+    <div id="box">
+        <h3 id='header'><%= info %></h3>
+    </div>
+    
+
+    <img id="image" src="<%= url %>">
+    
+
+    <form action="/back" method="POST" id="form">
+        <input type="submit" name="backBtn" value="Back">
+    </form>
+</body>
+>>>>>>> 7fd3c1b6d9b2e425d5adf0f537f8ac70b377f3db
+</html>

@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Cards</title>
+
+    <style>
+      #textbox {
+        width: 200px;
+        height: 200px;
+      }
+
+      #header {
+        text-align: center;
+      }
+
+      #name {
+        margin-bottom: 1%;
+      }
+
+      #box {
+        margin-bottom: 1%;
+        width: 500px;
+        height: 100px;
+      }
+
+      #card {
+        margin-top: 2%;
+        width: 300px;
+        height: 150px;
+      }
+
+      #form {
+        text-align: center;
+        margin-top: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header">Pranav's Flash Card Website</h1>
+    <h3 id="header">This is a free website to host your flash cards on</h3>
+    <p id="header">PS. I am procrastinating on math homework (shhhh)</p>
+    <p>Test i guess</p>
+
+    <form
+      action="/info"
+      method="POST"
+      id="header"
+      name="cardForm"
+      autocomplete="off"
+    >
+      <input
+        type="text"
+        name="name"
+        value=""
+        placeholder="Card Title"
+        id="name"
+      />
+      <br />
+      <textarea
+        name="phrase"
+        value=""
+        placeholder="Information"
+        id="box"
+      ></textarea>
+      <br />
+      <input
+        type="text"
+        name="url"
+        value=""
+        placeholder="Image Url"
+        id="name"
+      />
+      <br />
+      <input type="submit" />
+    </form>
+
+    <br />
+
+    <!-- <% for (var i = 0; i < people.length; i++){ %>
+        <button id="card" onclick="alert('<%- people[i].info %>');"><%- people[i].name %></button>
+    <% } %> -->
+
+    <form action="/buttons" method="POST" id="header">
+      <% for (var i = 0; i < people.length; i++){ %>
+      <input
+        id="card"
+        name="alert"
+        type="submit"
+        value="<%- people[i].name %>"
+      />
+      <% } %>
+    </form>
+
+    <form action="/delete" method="POST" id="form">
+      <input
+        type="text"
+        name="choose"
+        value=""
+        placeholder="Card name (Exact)"
+      />
+      <input type="submit" value="Delete" />
+    </form>
+
+    <script type='text/javascript' src='config.js'></script>
+  </body>
+</html>
